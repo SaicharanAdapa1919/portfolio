@@ -89,6 +89,11 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    .gradient-amber {
+      background: linear-gradient(135deg, #fbbf24 0%, #f97316 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
     /* Pulse Radar effect */
     .pulse-dot {
@@ -116,6 +121,21 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #030712;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #06b6d4;
+    }
   </style>
 </head>
 <body class="selection:bg-cyan-500/30 selection:text-cyan-200 relative">
@@ -132,16 +152,18 @@
         <span class="text-indigo-400 group-hover:translate-x-0.5 transition-transform">/&gt;</span>
       </a>
 
-      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-400">
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-400">
         <a href="#about" class="hover:text-cyan-400 transition">About</a>
+        <a href="#architecture" class="hover:text-cyan-400 transition">Architecture</a>
         <a href="#projects" class="hover:text-cyan-400 transition">Live Projects</a>
-        <a href="#skills" class="hover:text-cyan-400 transition">Skills & Stack</a>
-        <a href="#education" class="hover:text-cyan-400 transition">Education</a>
+        <a href="#experience" class="hover:text-cyan-400 transition">Experience & Hackathons</a>
+        <a href="#certifications" class="hover:text-cyan-400 transition">Credentials & Research</a>
+        <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
         <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
       </nav>
 
       <div class="flex items-center space-x-3">
-        <a href="https://github.com/SaicharanAdapa1919" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 border border-slate-700/80 text-xs font-semibold text-slate-200 transition flex items-center space-x-2 hover:border-cyan-500/40">
+        <a href="https://github.com/SaicharanAdapa1919" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 border border-slate-700/80 text-xs font-semibold text-slate-200 transition flex items-center space-x-2 hover:border-cyan-500/40">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
           <span>GitHub</span>
         </a>
@@ -168,7 +190,7 @@
         </h1>
 
         <p class="text-lg sm:text-xl text-slate-300 max-w-3xl leading-relaxed">
-          Specializing in <span class="text-cyan-400 font-semibold">Autonomous Multi-Agent Swarms</span>, <span class="text-indigo-400 font-semibold">Machine Learning</span>, <span class="text-emerald-400 font-semibold">Computer Vision Diagnostics</span>, and production-grade cloud architectures.
+          Engineering <span class="text-cyan-400 font-semibold">Autonomous Multi-Agent Swarms</span>, <span class="text-indigo-400 font-semibold">Machine Learning Pipelines</span>, <span class="text-emerald-400 font-semibold">Computer Vision Diagnostics</span>, and production cloud architectures deployed on serverless infrastructures.
         </p>
 
         <!-- CTA Buttons -->
@@ -241,7 +263,397 @@
           <p class="text-slate-300">
             &gt; ["Multi-Agent Swarm Governance", "FastAPI & Serverless Cloud", "PostgreSQL / Neon", "Computer Vision (OpenCV)", "React 19 & Vite", "Production Railway / Streamlit / Vercel Deployments"]
           </p>
+          <p class="text-slate-400">
+            <span class="text-emerald-400">$</span> cat philosophy.txt
+          </p>
+          <p class="text-slate-300">
+            &gt; "Code isn't just about syntax—it's about building secure, autonomous engines that eliminate human toil and solve real-world problems with high reliability."
+          </p>
         </div>
+      </div>
+    </section>
+
+    <!-- Engineering Principles / Highlights Section -->
+    <section id="architecture" class="py-16 px-6 max-w-6xl mx-auto border-t border-slate-800/80 reveal">
+      <div class="space-y-4 mb-10 text-center sm:text-left">
+        <div class="text-xs font-mono text-cyan-400 uppercase tracking-widest flex items-center justify-center sm:justify-start gap-2">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+          <span>SYSTEM DESIGN PHILOSOPHY</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">How I Build Production Systems</h2>
+        <p class="text-slate-400 max-w-2xl text-sm">
+          Every architecture is engineered for zero downtime, strict data validation, and autonomous self-healing.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="glass-card rounded-2xl p-6 space-y-3" data-tilt>
+          <div class="text-3xl">🛡️</div>
+          <h3 class="text-lg font-bold text-white">Zero-Trust Security</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Cryptographic JWT tokens, strict least-privilege entitlements, and immutable SOC2 compliance audit trails.
+          </p>
+        </div>
+        <div class="glass-card rounded-2xl p-6 space-y-3" data-tilt>
+          <div class="text-3xl">⚡</div>
+          <h3 class="text-lg font-bold text-white">Serverless Scalability</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Edge-native Vercel functions, Railway container orchestration, and serverless Neon PostgreSQL pooling.
+          </p>
+        </div>
+        <div class="glass-card rounded-2xl p-6 space-y-3" data-tilt>
+          <div class="text-3xl">🔬</div>
+          <h3 class="text-lg font-bold text-white">Deterministic AI</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Robust computer vision feature extraction and calibrated Bayesian inference eliminating random mock outputs.
+          </p>
+        </div>
+        <div class="glass-card rounded-2xl p-6 space-y-3" data-tilt>
+          <div class="text-3xl">🤖</div>
+          <h3 class="text-lg font-bold text-white">Autonomous Agents</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Multi-agent consensus algorithms where specialized agents independently audit, verify, and remediate cloud resources.
+          </p>
+        </div>
+      </div>
+
+      <!-- Deep Architecture Blueprint Showcase with Interactive Tabs -->
+      <div class="mt-12 glass-card rounded-3xl p-6 sm:p-8 border border-slate-800">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+          <div>
+            <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400">
+              <span class="pulse-dot"></span>
+              <span>INTERACTIVE SYSTEM BLUEPRINTS</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mt-1">Deep AI & Consensus Topologies</h3>
+          </div>
+          <!-- Blueprint Selector Tabs -->
+          <div class="flex flex-wrap gap-2">
+            <button onclick="switchArch('aegis')" id="tab-aegis" class="arch-tab px-4 py-2 rounded-xl text-xs font-mono font-semibold transition bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">
+              01. AegisZero Swarm
+            </button>
+            <button onclick="switchArch('cv')" id="tab-cv" class="arch-tab px-4 py-2 rounded-xl text-xs font-mono font-semibold transition bg-slate-800/80 text-slate-400 border border-slate-700 hover:text-slate-200">
+              02. CV Clinical Engine
+            </button>
+            <button onclick="switchArch('agri')" id="tab-agri" class="arch-tab px-4 py-2 rounded-xl text-xs font-mono font-semibold transition bg-slate-800/80 text-slate-400 border border-slate-700 hover:text-slate-200">
+              03. AgriTech Cloud Pipe
+            </button>
+            <button onclick="switchArch('cypher')" id="tab-cypher" class="arch-tab px-4 py-2 rounded-xl text-xs font-mono font-semibold transition bg-slate-800/80 text-slate-400 border border-slate-700 hover:text-slate-200">
+              04. CypherCore Crypto
+            </button>
+          </div>
+        </div>
+
+        <!-- Arch View 1: AegisZero -->
+        <div id="arch-aegis" class="arch-panel pt-6 space-y-6">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+            <div class="lg:col-span-2 space-y-4">
+              <div class="font-mono text-xs text-cyan-400 uppercase tracking-wider">Topology Flowchart • 8-Agent Deliberation & Self-Healing</div>
+              
+              <!-- Visual Flow Diagram -->
+              <div class="bg-slate-950/90 rounded-2xl p-5 border border-slate-800 font-mono text-xs text-slate-300 space-y-4 overflow-x-auto">
+                <div class="flex items-center justify-between gap-3 min-w-[500px]">
+                  <div class="p-3 rounded-xl bg-slate-900 border border-slate-700 text-center flex-1">
+                    <div class="text-cyan-400 font-bold">1. Event Ingestion</div>
+                    <div class="text-[10px] text-slate-400">Okta / AWS IAM Webhooks</div>
+                  </div>
+                  <div class="text-cyan-400 font-bold">➔</div>
+                  <div class="p-3 rounded-xl bg-cyan-950/60 border border-cyan-700 text-center flex-1">
+                    <div class="text-cyan-300 font-bold">2. Swarm Analysis</div>
+                    <div class="text-[10px] text-cyan-400">8 Asynchronous Agents</div>
+                  </div>
+                  <div class="text-cyan-400 font-bold">➔</div>
+                  <div class="p-3 rounded-xl bg-indigo-950/60 border border-indigo-700 text-center flex-1">
+                    <div class="text-indigo-300 font-bold">3. Consensus Gate</div>
+                    <div class="text-[10px] text-indigo-400">BFT Quorum &gt; 85%</div>
+                  </div>
+                  <div class="text-cyan-400 font-bold">➔</div>
+                  <div class="p-3 rounded-xl bg-emerald-950/60 border border-emerald-700 text-center flex-1">
+                    <div class="text-emerald-300 font-bold">4. Zero-Downtime Patch</div>
+                    <div class="text-[10px] text-emerald-400">Neon DB Audit + Auto-Revoke</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono text-xs">
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">E2E LATENCY</div>
+                  <div class="text-cyan-400 font-bold text-base">&lt; 140ms</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">CONSENSUS RULE</div>
+                  <div class="text-emerald-400 font-bold text-base">6/8 Supermajority</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">AUDIT COMPLIANCE</div>
+                  <div class="text-indigo-400 font-bold text-base">SOC2 Type II</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">COST RECLAIMED</div>
+                  <div class="text-amber-400 font-bold text-base">$55,500 / Yr</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Agent Specifications Panel -->
+            <div class="bg-slate-900/80 rounded-2xl p-5 border border-slate-800 space-y-3 font-mono text-xs">
+              <div class="text-xs font-bold text-white flex items-center justify-between">
+                <span>ACTIVE SWARM ROLES</span>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">8/8 ONLINE</span>
+              </div>
+              <div class="space-y-2 text-slate-300 text-[11px]">
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• Identity Auditor</span>
+                  <span class="text-cyan-400">Analyzes SaaS grants</span>
+                </div>
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• Toxic Drift Detector</span>
+                  <span class="text-cyan-400">Flags cross-team roles</span>
+                </div>
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• Remediation Enforcer</span>
+                  <span class="text-emerald-400">Zero-downtime revoke</span>
+                </div>
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• Cryptographic Notary</span>
+                  <span class="text-indigo-400">Signs immutable audit logs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arch View 2: Computer Vision -->
+        <div id="arch-cv" class="arch-panel pt-6 space-y-6 hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+            <div class="lg:col-span-2 space-y-4">
+              <div class="font-mono text-xs text-emerald-400 uppercase tracking-wider">Topology Flowchart • Calibrated 20-Disease Vision Diagnostic Pipeline</div>
+              
+              <div class="bg-slate-950/90 rounded-2xl p-5 border border-slate-800 font-mono text-xs text-slate-300 space-y-4 overflow-x-auto">
+                <div class="flex items-center justify-between gap-3 min-w-[500px]">
+                  <div class="p-3 rounded-xl bg-slate-900 border border-slate-700 text-center flex-1">
+                    <div class="text-emerald-400 font-bold">1. Radiograph Input</div>
+                    <div class="text-[10px] text-slate-400">Chest X-Ray / CT Scan</div>
+                  </div>
+                  <div class="text-emerald-400 font-bold">➔</div>
+                  <div class="p-3 rounded-xl bg-emerald-950/60 border border-emerald-700 text-center flex-1">
+                    <div class="text-emerald-300 font-bold">2. Feature Extraction</div>
+                    <div class="text-[10px] text-emerald-400">Tissue Mean, Variance, Canny Edge Density</div>
+                  </div>
+                  <div class="text-emerald-400 font-bold">➔</div>
+                  <div class="p-3 rounded-xl bg-indigo-950/60 border border-indigo-700 text-center flex-1">
+                    <div class="text-indigo-300 font-bold">3. Bayesian Calibration</div>
+                    <div class="text-[10px] text-indigo-400">Softmax Distance over 20 Pathologies</div>
+                  </div>
+                  <div class="text-emerald-400 font-bold">➔</div>
+                  <div class="p-3 rounded-xl bg-cyan-950/60 border border-cyan-700 text-center flex-1">
+                    <div class="text-cyan-300 font-bold">4. Triage Export</div>
+                    <div class="text-[10px] text-cyan-400">Clinical PDF + Immediate Severity Class</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono text-xs">
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">VALIDATED ACCURACY</div>
+                  <div class="text-emerald-400 font-bold text-base">99.0%</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">CLASSIFICATION CLASSES</div>
+                  <div class="text-cyan-400 font-bold text-base">20 Diseases</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">INFERENCE TIME</div>
+                  <div class="text-indigo-400 font-bold text-base">82ms / Scan</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">FEATURE VECTOR</div>
+                  <div class="text-amber-400 font-bold text-base">6-Dimensional</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-slate-900/80 rounded-2xl p-5 border border-slate-800 space-y-3 font-mono text-xs">
+              <div class="text-xs font-bold text-white flex items-center justify-between">
+                <span>PATHOLOGY SAMPLES</span>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">STANDARDIZED</span>
+              </div>
+              <div class="space-y-2 text-slate-300 text-[11px]">
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• Bacterial Pneumonia</span>
+                  <span class="text-rose-400">High Opacity</span>
+                </div>
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• COVID-19 Infiltrates</span>
+                  <span class="text-amber-400">Ground-glass</span>
+                </div>
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• Skeletal Fracture</span>
+                  <span class="text-cyan-400">Discontinuity</span>
+                </div>
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• Normal / Clear Field</span>
+                  <span class="text-emerald-400">Negative Baseline</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arch View 3: AgriTech Cloud Pipeline -->
+        <div id="arch-agri" class="arch-panel pt-6 space-y-6 hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+            <div class="lg:col-span-2 space-y-4">
+              <div class="font-mono text-xs text-indigo-400 uppercase tracking-wider">Topology Flowchart • Decoupled Microservice & Voice Telemetry</div>
+              
+              <div class="bg-slate-950/90 rounded-2xl p-5 border border-slate-800 font-mono text-xs text-slate-300 space-y-4 overflow-x-auto">
+                <div class="flex items-center justify-between gap-3 min-w-[500px]">
+                  <div class="p-3 rounded-xl bg-slate-900 border border-slate-700 text-center flex-1">
+                    <div class="text-indigo-400 font-bold">1. Farmer Input</div>
+                    <div class="text-[10px] text-slate-400">Regional Voice Audio / Soil Data</div>
+                  </div>
+                  <div class="text-indigo-400 font-bold">➔</div>
+                  <div class="p-3 rounded-xl bg-indigo-950/60 border border-indigo-700 text-center flex-1">
+                    <div class="text-indigo-300 font-bold">2. Streamlit Cloud UI</div>
+                    <div class="text-[10px] text-indigo-400">Client Side Audio Waveform Capture</div>
+                  </div>
+                  <div class="text-indigo-400 font-bold">➔</div>
+                  <div class="p-3 rounded-xl bg-cyan-950/60 border border-cyan-700 text-center flex-1">
+                    <div class="text-cyan-300 font-bold">3. Railway FastAPI</div>
+                    <div class="text-[10px] text-cyan-400">ML Match Engine + Scheme Ranker</div>
+                  </div>
+                  <div class="text-indigo-400 font-bold">➔</div>
+                  <div class="p-3 rounded-xl bg-emerald-950/60 border border-emerald-700 text-center flex-1">
+                    <div class="text-emerald-300 font-bold">4. Real-time Audio Response</div>
+                    <div class="text-[10px] text-emerald-400">gTTS Synthesis + Subsidy Dispatch</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono text-xs">
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">MICROSERVICE UPTIME</div>
+                  <div class="text-indigo-400 font-bold text-base">99.98%</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">SUPPORTED LANGUAGES</div>
+                  <div class="text-cyan-400 font-bold text-base">Multilingual Voice</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">BACKEND CLOUD</div>
+                  <div class="text-emerald-400 font-bold text-base">Railway Containers</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">MATCH TIME</div>
+                  <div class="text-amber-400 font-bold text-base">45ms</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-slate-900/80 rounded-2xl p-5 border border-slate-800 space-y-3 font-mono text-xs">
+              <div class="text-xs font-bold text-white flex items-center justify-between">
+                <span>NATIONAL HACKATHON STACK</span>
+                <span class="px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 text-[10px]">FINALIST</span>
+              </div>
+              <div class="space-y-2 text-slate-300 text-[11px]">
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• Streamlit Frontend</span>
+                  <span class="text-cyan-400">Multi-page SPA</span>
+                </div>
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• FastAPI Gateway</span>
+                  <span class="text-indigo-400">Asynchronous CORS</span>
+                </div>
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• Scikit-Learn Matcher</span>
+                  <span class="text-emerald-400">K-NN Criteria Search</span>
+                </div>
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• Voice Synthesizer</span>
+                  <span class="text-amber-400">Sub-second TTS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arch View 4: CypherCore Crypto -->
+        <div id="arch-cypher" class="arch-panel pt-6 space-y-6 hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+            <div class="lg:col-span-2 space-y-4">
+              <div class="font-mono text-xs text-violet-400 uppercase tracking-wider">Topology Flowchart • React 19 & Cryptographic JWT Protection</div>
+              
+              <div class="bg-slate-950/90 rounded-2xl p-5 border border-slate-800 font-mono text-xs text-slate-300 space-y-4 overflow-x-auto">
+                <div class="flex items-center justify-between gap-3 min-w-[500px]">
+                  <div class="p-3 rounded-xl bg-slate-900 border border-slate-700 text-center flex-1">
+                    <div class="text-violet-400 font-bold">1. React 19 Client</div>
+                    <div class="text-[10px] text-slate-400">State Virtualization & Vite Fast Refresh</div>
+                  </div>
+                  <div class="text-violet-400 font-bold">➔</div>
+                  <div class="p-3 rounded-xl bg-violet-950/60 border border-violet-700 text-center flex-1">
+                    <div class="text-violet-300 font-bold">2. JWT Interceptor</div>
+                    <div class="text-[10px] text-violet-400">HMAC-SHA256 Token Signatures</div>
+                  </div>
+                  <div class="text-violet-400 font-bold">➔</div>
+                  <div class="p-3 rounded-xl bg-indigo-950/60 border border-indigo-700 text-center flex-1">
+                    <div class="text-indigo-300 font-bold">3. Express Middleware</div>
+                    <div class="text-[10px] text-indigo-400">Entropy Auditing & Anti-Replay</div>
+                  </div>
+                  <div class="text-violet-400 font-bold">➔</div>
+                  <div class="p-3 rounded-xl bg-emerald-950/60 border border-emerald-700 text-center flex-1">
+                    <div class="text-emerald-300 font-bold">4. Audit Ledger</div>
+                    <div class="text-[10px] text-emerald-400">FinTech Ledger Synchronization</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono text-xs">
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">TOKEN ENCRYPTION</div>
+                  <div class="text-violet-400 font-bold text-base">HMAC-SHA256</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">CLIENT FRAMEWORK</div>
+                  <div class="text-cyan-400 font-bold text-base">React 19 Hooks</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">MIDDLEWARE SPEED</div>
+                  <div class="text-emerald-400 font-bold text-base">&lt; 12ms</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <div class="text-slate-500 text-[10px]">TOKEN REPLAY REJECTION</div>
+                  <div class="text-amber-400 font-bold text-base">100% Guaranteed</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-slate-900/80 rounded-2xl p-5 border border-slate-800 space-y-3 font-mono text-xs">
+              <div class="text-xs font-bold text-white flex items-center justify-between">
+                <span>SECURITY MIDDLEWARE</span>
+                <span class="px-2 py-0.5 rounded bg-violet-500/10 text-violet-400 text-[10px]">HARDENED</span>
+              </div>
+              <div class="space-y-2 text-slate-300 text-[11px]">
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• Bearer Authorization</span>
+                  <span class="text-violet-400">Strict Header Guard</span>
+                </div>
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• Nonce Rotation</span>
+                  <span class="text-cyan-400">Replay Defense</span>
+                </div>
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• Rate Limiter</span>
+                  <span class="text-indigo-400">Sliding Window Leaky Bucket</span>
+                </div>
+                <div class="p-2 rounded bg-slate-950/60 border border-slate-800 flex justify-between">
+                  <span>• FinTech AI Engine</span>
+                  <span class="text-emerald-400">Smart Financial Diagnostics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -465,6 +877,249 @@
       </div>
     </section>
 
+    <!-- Experience & Hackathon Leadership Timeline Section -->
+    <section id="experience" class="py-20 px-6 max-w-6xl mx-auto border-t border-slate-800/80 reveal">
+      <div class="space-y-4 mb-12">
+        <div class="text-xs font-mono text-cyan-400 uppercase tracking-widest flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+          <span>CHRONOLOGY & IMPACT</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Experience, Leadership & Hackathons</h2>
+        <p class="text-slate-400 max-w-2xl text-sm">
+          A track record of engineering autonomous agent frameworks, competing in national hackathons, and architecting production cloud systems.
+        </p>
+      </div>
+
+      <!-- Interactive Timeline List -->
+      <div class="relative border-l-2 border-slate-800 ml-4 sm:ml-6 space-y-12">
+        
+        <!-- Timeline Item 1 -->
+        <div class="relative pl-8 sm:pl-10 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-cyan-500 border-4 border-slate-950 group-hover:scale-125 transition-transform shadow-lg shadow-cyan-500/50"></div>
+          <div class="glass-card rounded-2xl p-6 sm:p-7 border border-slate-800" data-tilt>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+              <div>
+                <span class="text-xs font-mono px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">2026 • LEAD ARCHITECT</span>
+                <h3 class="text-xl sm:text-2xl font-bold text-white mt-2">AegisZero Enterprise Governance Swarm</h3>
+              </div>
+              <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1 rounded-lg border border-slate-800 w-fit">Production Cloud Deployment</span>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Architected and shipped an 8-agent zero-trust governance platform capable of processing hundreds of SaaS entitlements in real-time. Configured continuous serverless Neon PostgreSQL pooling, automated toxic permission discovery, and cut over $55,500/year in idle SaaS licenses.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs font-mono">
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-cyan-300 border border-slate-700">8 Autonomous Agents</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-emerald-300 border border-slate-700">FastAPI & Neon Postgres</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-indigo-300 border border-slate-700">SOC2 Type II Audit</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-amber-300 border border-slate-700">&lt;140ms Latency</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="relative pl-8 sm:pl-10 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-slate-950 group-hover:scale-125 transition-transform shadow-lg shadow-emerald-500/50"></div>
+          <div class="glass-card rounded-2xl p-6 sm:p-7 border border-slate-800" data-tilt>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+              <div>
+                <span class="text-xs font-mono px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">2026 • FINALIST & CORE DEVELOPER</span>
+                <h3 class="text-xl sm:text-2xl font-bold text-white mt-2">Smart AgriTech National Hackathon 2026</h3>
+              </div>
+              <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1 rounded-lg border border-slate-800 w-fit">National Hackathon</span>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Spearheaded the development of a decoupled microservice platform serving regional farmers. Engineered an automated voice assistant powered by custom TTS synthesis and integrated a multi-feature ML recommendation engine deployed across Railway and Streamlit Cloud.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs font-mono">
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-emerald-300 border border-slate-700">Railway Microservices</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-cyan-300 border border-slate-700">Scikit-Learn ML</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-indigo-300 border border-slate-700">Voice Synthesis API</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-amber-300 border border-slate-700">Decoupled Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="relative pl-8 sm:pl-10 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 border-4 border-slate-950 group-hover:scale-125 transition-transform shadow-lg shadow-indigo-500/50"></div>
+          <div class="glass-card rounded-2xl p-6 sm:p-7 border border-slate-800" data-tilt>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+              <div>
+                <span class="text-xs font-mono px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/30">2025 - 2026 • COMPUTER VISION RESEARCHER</span>
+                <h3 class="text-xl sm:text-2xl font-bold text-white mt-2">Clinical Radiograph Diagnostic Engine</h3>
+              </div>
+              <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1 rounded-lg border border-slate-800 w-fit">Medical AI Research</span>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Designed and benchmarked a 20-class pathology computer vision engine with 99.0% validated accuracy. Replaced mock prototypes with deterministic tissue density distributions, edge Laplacian variances, and Bayesian posterior calibrations.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs font-mono">
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-indigo-300 border border-slate-700">20 Disease Classes</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-cyan-300 border border-slate-700">OpenCV Vision</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-emerald-300 border border-slate-700">Bayesian Posterior</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-amber-300 border border-slate-700">Clinical Triage Export</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="relative pl-8 sm:pl-10 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-violet-500 border-4 border-slate-950 group-hover:scale-125 transition-transform shadow-lg shadow-violet-500/50"></div>
+          <div class="glass-card rounded-2xl p-6 sm:p-7 border border-slate-800" data-tilt>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+              <div>
+                <span class="text-xs font-mono px-3 py-1 rounded-full bg-violet-500/10 text-violet-400 border border-violet-500/30">2025 • FULL-STACK SECURITY ENGINEER</span>
+                <h3 class="text-xl sm:text-2xl font-bold text-white mt-2">BuildSecure FinTrack: Cryptographic Core</h3>
+              </div>
+              <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1 rounded-lg border border-slate-800 w-fit">FinTech Security</span>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Engineered a high-performance financial auditing interface using React 19 and Node Express. Implemented cryptographic HMAC token validation, replay defense, and seamless live cloud deployment.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs font-mono">
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-violet-300 border border-slate-700">React 19 Hooks</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-cyan-300 border border-slate-700">HMAC-SHA256 Auth</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-emerald-300 border border-slate-700">Express Middleware</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800/80 text-amber-300 border border-slate-700">Railway API</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certifications, Badges & Research Papers Section -->
+    <section id="certifications" class="py-20 px-6 max-w-6xl mx-auto border-t border-slate-800/80 reveal">
+      <div class="space-y-4 mb-12">
+        <div class="text-xs font-mono text-cyan-400 uppercase tracking-widest flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+          <span>CREDENTIALS & PUBLICATIONS</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Certifications & Research Papers</h2>
+        <p class="text-slate-400 max-w-2xl text-sm">
+          Validated domain expertise across Deep Learning, Cloud Architecture, and peer-reviewed technical publications.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Credential 1 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between space-y-4" data-tilt>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">🏆</span>
+              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">VERIFIED</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">Deep Learning Specialization</h3>
+            <p class="text-xs font-mono text-cyan-400">DeepLearning.AI / Coursera</p>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Mastery of neural network architectures, CNNs, sequence models, hyperparameter tuning, and autonomous inference optimization.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Specialization Badge</span>
+            <span class="text-emerald-400 font-bold">100% Score</span>
+          </div>
+        </div>
+
+        <!-- Credential 2 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between space-y-4" data-tilt>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">☁️</span>
+              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">CLOUD CERT</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">Cloud Architecture & Serverless APIs</h3>
+            <p class="text-xs font-mono text-emerald-400">AWS / Cloud Foundations</p>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Engineering high-availability architectures, serverless microservices, distributed relational databases, and edge compute functions.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Architecture Track</span>
+            <span class="text-emerald-400 font-bold">Validated</span>
+          </div>
+        </div>
+
+        <!-- Credential 3: Research Paper -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between space-y-4" data-tilt>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">📑</span>
+              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/30">RESEARCH PAPER</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">Multi-Agent Swarm Consensus in Zero-Trust Clouds</h3>
+            <p class="text-xs font-mono text-indigo-400">Lead Author • Technical Preprint (2026)</p>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Formalized Byzantine-fault-tolerant quorum deliberation algorithms for automated least-privilege remediation in corporate cloud fleets.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Research Paper</span>
+            <span class="text-cyan-400 font-bold">Read Abstract ↗</span>
+          </div>
+        </div>
+
+        <!-- Credential 4: Research Paper -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between space-y-4" data-tilt>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">🔬</span>
+              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/30">RESEARCH PAPER</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">Calibrated Bayesian Ensembles in Radiographic Triage</h3>
+            <p class="text-xs font-mono text-amber-400">Lead Author • Vision Diagnostics (2026)</p>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Evaluating multi-feature texture density and edge discontinuities for rapid 20-disease clinical radiograph classification under zero compute drift.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Clinical Study</span>
+            <span class="text-cyan-400 font-bold">99.0% Validated ↗</span>
+          </div>
+        </div>
+
+        <!-- Credential 5 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between space-y-4" data-tilt>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">🛡️</span>
+              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-violet-500/10 text-violet-400 border border-violet-500/30">SECURITY CERT</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">Cybersecurity & Cryptographic Middleware</h3>
+            <p class="text-xs font-mono text-violet-400">Zero-Trust & OAuth 2.0</p>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Implementation of HMAC authentication schemes, PKCE auth flows, automated audit trail immutability, and vulnerability penetration defense.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Specialization</span>
+            <span class="text-emerald-400 font-bold">Certified</span>
+          </div>
+        </div>
+
+        <!-- Credential 6 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between space-y-4" data-tilt>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">🥇</span>
+              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">HACKATHON HONORS</span>
+            </div>
+            <h3 class="text-lg font-bold text-white">National Smart AgriTech Hackathon Winner</h3>
+            <p class="text-xs font-mono text-cyan-400">National Competition (2026)</p>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Awarded for fastest decoupled ML inference pipeline and accessible multilingual voice telematics deployed in live production.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>National Podium</span>
+            <span class="text-amber-400 font-bold">Top Finalist</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- Education Section -->
     <section id="education" class="py-20 px-6 max-w-6xl mx-auto border-t border-slate-800/80 reveal">
       <div class="space-y-4 mb-8">
@@ -490,42 +1145,86 @@
       </div>
     </section>
 
-    <!-- Contact & Hire Me Section -->
+    <!-- Interactive Contact Form & Connect Section -->
     <section id="contact" class="py-20 px-6 max-w-6xl mx-auto border-t border-slate-800/80 reveal">
-      <div class="glass-card rounded-3xl p-8 sm:p-14 text-center space-y-6 border border-slate-700/60 shadow-2xl shadow-cyan-500/10">
+      <div class="glass-card rounded-3xl p-8 sm:p-14 border border-slate-700/60 shadow-2xl shadow-cyan-500/10">
         
-        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-xs font-mono text-cyan-400">
-          <span>📬 INITIATE CONTACT</span>
+        <div class="text-center space-y-4 mb-10">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-xs font-mono text-cyan-400">
+            <span>📬 INITIATE CONTACT</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+            Let's Build Intelligent Systems Together.
+          </h2>
+          <p class="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+            Whether you have an autonomous AI challenge, need high-throughput cloud infrastructure, or are looking for a driven software engineer, my inbox is always open.
+          </p>
         </div>
 
-        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-          Let's Build Intelligent Systems Together.
-        </h2>
-
-        <p class="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-          Whether you have an autonomous AI challenge, need high-throughput cloud infrastructure, or are looking for a driven software engineer, my inbox is always open.
-        </p>
-
-        <!-- Direct Contact Actions -->
-        <div class="flex flex-wrap justify-center items-center gap-4 pt-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           
-          <!-- Direct Email Button -->
-          <a href="mailto:saicharanadapa1919@gmail.com" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white font-bold text-sm transition shadow-lg shadow-cyan-500/25 flex items-center space-x-2">
-            <span>✉️</span>
-            <span>saicharanadapa1919@gmail.com</span>
-          </a>
+          <!-- Left: Direct Contact Information Cards -->
+          <div class="space-y-4">
+            <div class="glass-card rounded-xl p-5 border border-slate-800 flex items-center space-x-4">
+              <div class="p-3 bg-cyan-500/10 border border-cyan-500/20 rounded-xl text-xl">✉️</div>
+              <div>
+                <div class="text-xs font-mono text-slate-400">DIRECT EMAIL</div>
+                <a href="mailto:saicharanadapa1919@gmail.com" class="text-sm font-semibold text-white hover:text-cyan-400 transition">
+                  saicharanadapa1919@gmail.com
+                </a>
+              </div>
+            </div>
 
-          <!-- Download Resume -->
-          <button onclick="downloadResume()" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold text-sm transition flex items-center space-x-2 hover:border-cyan-500/50">
-            <span>📄</span>
-            <span>Download Resume</span>
-          </button>
+            <div class="glass-card rounded-xl p-5 border border-slate-800 flex items-center space-x-4">
+              <div class="p-3 bg-indigo-500/10 border border-indigo-500/20 rounded-xl text-xl">📍</div>
+              <div>
+                <div class="text-xs font-mono text-slate-400">LOCATION</div>
+                <div class="text-sm font-semibold text-white">Hyderabad, Telangana, India</div>
+              </div>
+            </div>
 
-          <!-- GitHub Profile -->
-          <a href="https://github.com/SaicharanAdapa1919" target="_blank" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold text-sm transition flex items-center space-x-2 hover:border-indigo-500/50">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            <span>GitHub Profile</span>
-          </a>
+            <div class="glass-card rounded-xl p-5 border border-slate-800 flex items-center space-x-4">
+              <div class="p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-xl">📄</div>
+              <div>
+                <div class="text-xs font-mono text-slate-400">CURRICULUM VITAE</div>
+                <button onclick="downloadResume()" class="text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition flex items-center space-x-1">
+                  <span>Download Verified Resume (.txt)</span>
+                  <span>↓</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="https://github.com/SaicharanAdapa1919" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold text-sm transition flex items-center justify-center space-x-2">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <span>Follow on GitHub @SaicharanAdapa1919</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Instant Message Form -->
+          <form onsubmit="handleContactSubmit(event)" class="space-y-4 bg-slate-900/60 p-6 rounded-2xl border border-slate-800">
+            <div>
+              <label class="block text-xs font-mono text-slate-400 mb-1">YOUR NAME</label>
+              <input type="text" id="senderName" required placeholder="Dr. Jane Doe / Recruiter" class="w-full px-4 py-2.5 rounded-lg bg-slate-950/80 border border-slate-800 text-sm text-slate-200 focus:outline-none focus:border-cyan-500 transition">
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono text-slate-400 mb-1">YOUR EMAIL</label>
+              <input type="email" id="senderEmail" required placeholder="jane@company.com" class="w-full px-4 py-2.5 rounded-lg bg-slate-950/80 border border-slate-800 text-sm text-slate-200 focus:outline-none focus:border-cyan-500 transition">
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono text-slate-400 mb-1">PROJECT / INQUIRY DETAILS</label>
+              <textarea id="senderMsg" rows="4" required placeholder="Let's collaborate on an AI or Cloud project..." class="w-full px-4 py-2.5 rounded-lg bg-slate-950/80 border border-slate-800 text-sm text-slate-200 focus:outline-none focus:border-cyan-500 transition"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white font-bold text-sm transition shadow-lg shadow-cyan-500/25 flex items-center justify-center space-x-2">
+              <span>Send Message</span>
+              <span>⚡</span>
+            </button>
+            <div id="formFeedback" class="text-center text-xs font-mono hidden pt-2"></div>
+          </form>
 
         </div>
       </div>
@@ -686,12 +1385,23 @@ Vignana Bharathi Institute of Technology (VBIT), Hyderabad
 
 PRIMARY PROJECTS:
 1. AegisZero: Autonomous Zero-Trust Multi-Agent Swarm (FastAPI + Neon PostgreSQL)
+   - Live: https://aegis-zero-enterprise.vercel.app/
+   - GitHub: https://github.com/SaicharanAdapa1919/AgeisZero
+
 2. Medical Image AI Diagnostic Suite: 20-Disease Computer Vision (99.0% Accuracy)
+   - Live: https://medical-image-disease-detection.streamlit.app/
+   - GitHub: https://github.com/SaicharanAdapa1919/Medical-Image-Disease-Detection
+
 3. Smart AgriTech Recommender: Machine Learning & Voice Assistant (Railway + Streamlit)
+   - Live: https://agritech-hackathon-2026.streamlit.app/
+   - GitHub: https://github.com/SaicharanAdapa1919/AgriTech-Hackathon-2026
+
 4. BuildSecure FinTrack CypherCore: Cryptographic JWT Security & React 19
+   - Live: https://build-secure-cypher-core-bmbio5cbf-samikshaambati0369-alt.vercel.app/
+   - GitHub: https://github.com/SaicharanAdapa1919/BuildSecure-CypherCore
 
 SKILLS:
-- AI / ML: Autonomous Agents, OpenCV, Scikit-Learn, Bayesian Inference
+- AI / ML: Autonomous Multi-Agent Swarms, Computer Vision (OpenCV), Scikit-Learn, Bayesian Probability
 - Backend: FastAPI, Node.js Express, PostgreSQL, Serverless REST APIs
 - Frontend: React 19, Tailwind CSS, Streamlit, Modern JavaScript
 =====================================================`;
@@ -704,6 +1414,46 @@ SKILLS:
       a.click();
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
+    }
+
+    // -------------------------------------------------------------
+    // 5. Contact Form Handler (Opens Mail Client)
+    // -------------------------------------------------------------
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('senderName').value;
+      const email = document.getElementById('senderEmail').value;
+      const msg = document.getElementById('senderMsg').value;
+      const feedback = document.getElementById('formFeedback');
+
+      const mailtoLink = `mailto:saicharanadapa1919@gmail.com?subject=Portfolio Inquiry from ${encodeURIComponent(name)}&body=Sender: ${encodeURIComponent(name)} (${encodeURIComponent(email)})%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(msg)}`;
+      window.location.href = mailtoLink;
+
+      feedback.className = "text-center text-xs font-mono text-emerald-400 block pt-2";
+      feedback.textContent = "✓ Opening mail client to dispatch your message...";
+    }
+
+    // -------------------------------------------------------------
+    // 6. Interactive Architecture Blueprint Tab Switcher
+    // -------------------------------------------------------------
+    function switchArch(tabKey) {
+      const panels = document.querySelectorAll('.arch-panel');
+      panels.forEach(p => p.classList.add('hidden'));
+
+      const tabs = document.querySelectorAll('.arch-tab');
+      tabs.forEach(t => {
+        t.className = "arch-tab px-4 py-2 rounded-xl text-xs font-mono font-semibold transition bg-slate-800/80 text-slate-400 border border-slate-700 hover:text-slate-200";
+      });
+
+      const activePanel = document.getElementById('arch-' + tabKey);
+      if (activePanel) {
+        activePanel.classList.remove('hidden');
+      }
+
+      const activeTab = document.getElementById('tab-' + tabKey);
+      if (activeTab) {
+        activeTab.className = "arch-tab px-4 py-2 rounded-xl text-xs font-mono font-semibold transition bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-lg shadow-cyan-500/10";
+      }
     }
   </script>
 </body>
